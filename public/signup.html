@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MidNight | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <div class="auth-panel glow-panel">
+        <div class="auth-badge">MIDNIGHT</div>
+        <h1>Welcome back.</h1>
+        <p>Log in to continue your quest and dominate the arena.</p>
+      </div>
+
+      <div class="auth-panel form-panel">
+        <form id="loginForm" class="auth-form">
+          <div class="field-group">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="email" name="email" placeholder="player@midnight.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" name="password" placeholder="••••••••" required />
+          </div>
+
+          <button type="submit" class="primary-btn auth-btn">Login</button>
+
+          <div class="auth-links">
+            <a href="/signup">Need an account?</a>
+            <a href="/">Back to home</a>
+          </div>
+
+          <p id="loginStatus" class="status-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

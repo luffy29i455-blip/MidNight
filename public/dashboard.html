@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MidNight | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-shell">
+      <div class="auth-panel glow-panel">
+        <div class="auth-badge">NEW PLAYER</div>
+        <h1>Create your profile.</h1>
+        <p>Join MidNight and begin your journey in the gaming universe.</p>
+      </div>
+
+      <div class="auth-panel form-panel">
+        <form id="signupForm" class="auth-form">
+          <div class="field-group">
+            <label for="signupName">Name</label>
+            <input id="signupName" type="text" name="name" placeholder="Enter your gamer name" required />
+          </div>
+
+          <div class="field-group">
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" name="email" placeholder="player@midnight.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" type="password" name="password" placeholder="Min 6 characters" required />
+          </div>
+
+          <button type="submit" class="primary-btn auth-btn">Create Account</button>
+
+          <div class="auth-links">
+            <a href="/login">Already a member?</a>
+            <a href="/">Back to home</a>
+          </div>
+
+          <p id="signupStatus" class="status-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
