@@ -1,2 +1,4 @@
-# MidNight
-Animated gaming website with email signup welcome flow
+node_modules/
+.env
+npm-debug.log*
+.DS_Store

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MidNight | Play Beyond</title>
+    <meta
+      name="description"
+      content="MidNight is a neon gaming platform where players level up, compete, and connect."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+
+    <header class="topbar">
+      <div class="logo-wrap">
+        <span class="logo-dot"></span>
+        <span class="logo-text">MIDNIGHT</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#features">Features</a>
+        <a href="#community">Community</a>
+      </nav>
+
+      <button class="nav-btn">Join Now</button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">LIVE. COMPETE. DOMINATE.</p>
+          <h1>Enter the <span>Night</span> and Own the Arena.</h1>
+          <p class="subtext">
+            The ultimate gaming universe for streamers, squads, and elite players.
+            Level up faster, unlock rewards, and conquer your next battle.
+          </p>
+
+          <div class="cta-row">
+            <button class="primary-btn">Play Free</button>
+            <button class="secondary-btn">Watch Trailer</button>
+          </div>
+
+          <div class="stats">
+            <div>
+              <strong>1.2M+</strong>
+              <span>Players</span>
+            </div>
+            <div>
+              <strong>320K</strong>
+              <span>Matches</span>
+            </div>
+            <div>
+              <strong>18K</strong>
+              <span>Teams</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="game-card main-game">
+            <div class="badge">NEW SEASON</div>
+            <div class="glow-ring"></div>
+            <div class="character-silhouette"></div>
+            <div class="card-meta">
+              <span>Cyber Rift</span>
+              <span>Ranked PvP</span>
+            </div>
+          </div>
+
+          <div class="floating-panel panel-one">
+            <span>+420 XP</span>
+          </div>
+          <div class="floating-panel panel-two">
+            <span>Legendary</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="games" id="games">
+        <div class="section-heading">
+          <p class="eyebrow">FEATURED GAMES</p>
+          <h2>Choose your battlefield.</h2>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-box game-box-1">
+            <div class="game-icon">⚔️</div>
+            <h3>Shadow War</h3>
+            <p>Squad combat with tactical rushes and elite survival tactics.</p>
+          </article>
+
+          <article class="game-box game-box-2">
+            <div class="game-icon">🚀</div>
+            <h3>Neon Drift</h3>
+            <p>High-speed racing with futuristic tracks and pulse-pounding boosts.</p>
+          </article>
+
+          <article class="game-box game-box-3">
+            <div class="game-icon">🧠</div>
+            <h3>Quantum Strike</h3>
+            <p>Brain-powered missions that reward clever timing and strategy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="feature-copy">
+          <p class="eyebrow">WHY PLAY</p>
+          <h2>Designed for legends.</h2>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span>01</span>
+            <h3>Ultra-fast matches</h3>
+            <p>Jump into instant battles with fast game loops and smooth action.</p>
+          </div>
+          <div class="feature-item">
+            <span>02</span>
+            <h3>Reward system</h3>
+            <p>Earn badges, loot crates, and seasonal rewards as you progress.</p>
+          </div>
+          <div class="feature-item">
+            <span>03</span>
+            <h3>Community-powered</h3>
+            <p>Build squads, join live events, and connect with competitive players.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup" id="community">
+        <div class="signup-card">
+          <div class="signup-copy">
+            <p class="eyebrow">GET STARTED</p>
+            <h2>Join MidNight now.</h2>
+            <p>Register with your email and receive a welcome message from our gaming HQ.</p>
+          </div>
+
+          <form id="registerForm" class="signup-form">
+            <label for="email" class="sr-only">Email Address</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Register</button>
+          </form>
+
+          <p id="statusMessage" class="status-message" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

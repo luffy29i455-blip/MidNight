@@ -1,0 +1,23 @@
+{
+  "name": "midnight",
+  "version": "1.0.0",
+  "description": "Animated gaming website with welcome email registration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "gaming",
+    "website",
+    "nodemailer",
+    "express"
+  ],
+  "author": "MidNight",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}
